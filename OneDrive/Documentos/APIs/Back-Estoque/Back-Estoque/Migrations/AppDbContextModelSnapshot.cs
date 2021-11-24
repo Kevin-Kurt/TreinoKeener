@@ -41,9 +41,6 @@ namespace Back_Estoque.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("ConfirmPassword")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("Email")
                         .HasColumnType("longtext");
 
@@ -56,29 +53,6 @@ namespace Back_Estoque.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = 14535,
-                            ConfirmPassword = "kevinkurt",
-                            Name = "jean",
-                            Password = "kevinkurt"
-                        },
-                        new
-                        {
-                            UserId = 223435,
-                            ConfirmPassword = "kevinkurt",
-                            Name = "gustavo",
-                            Password = "kevinkurt"
-                        },
-                        new
-                        {
-                            UserId = 363634,
-                            ConfirmPassword = "kevinkurt",
-                            Name = "marcelo",
-                            Password = "kevinkurt"
-                        });
                 });
 #pragma warning restore 612, 618
         }

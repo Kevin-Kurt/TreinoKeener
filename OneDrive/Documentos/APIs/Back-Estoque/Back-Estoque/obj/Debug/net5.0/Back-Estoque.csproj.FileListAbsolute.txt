@@ -270,3 +270,10 @@ C:\Users\kekev\OneDrive\Documentos\APIs\Produtos e Usuarios\Back-Estoque\Back-Es
 C:\Users\kekev\OneDrive\Documentos\APIs\Produtos e Usuarios\Back-Estoque\Back-Estoque\obj\Debug\net5.0\ref\Back-Estoque.dll
 C:\Users\kekev\OneDrive\Documentos\APIs\Produtos e Usuarios\Back-Estoque\Back-Estoque\obj\Debug\net5.0\Back-Estoque.pdb
 C:\Users\kekev\OneDrive\Documentos\APIs\Produtos e Usuarios\Back-Estoque\Back-Estoque\obj\Debug\net5.0\Back-Estoque.genruntimeconfig.cache
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\kekev\OneDrive\Documentos\APIs\Back-Estoque\Back-Estoque\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

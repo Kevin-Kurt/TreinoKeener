@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Back_Estoque.Models;
+using Back_Estoque.Domain;
 using Backend_Estoque.Data;
 
 namespace Back_Estoque.Controllers
@@ -23,7 +23,7 @@ namespace Back_Estoque.Controllers
 
         // GET: api/Users
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsuarios()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
@@ -78,6 +78,7 @@ namespace Back_Estoque.Controllers
         [HttpPost]
         public async Task<ActionResult<User>> PostUser(User user)
         {
+
             _context.Users.Add(user);
             await _context.SaveChangesAsync();
 

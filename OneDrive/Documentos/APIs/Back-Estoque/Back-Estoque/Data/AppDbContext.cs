@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Back_Estoque.Models;
+using Back_Estoque.Domain;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Backend_Estoque.Data
 {
@@ -22,12 +24,7 @@ namespace Backend_Estoque.Data
               .Property(p => p.Price)
                 .HasPrecision(10, 2);
 
-            modelBuilder.Entity<User>()
-                .HasData(
-                    new User { UserId = 14535, Name = "jean", Password = "kevinkurt", ConfirmPassword = "kevinkurt" },
-                    new User { UserId = 223435, Name = "gustavo", Password = "kevinkurt", ConfirmPassword = "kevinkurt" },
-                    new User { UserId = 363634, Name = "marcelo", Password = "kevinkurt", ConfirmPassword = "kevinkurt" }
-                );
+           
         }
 
     }

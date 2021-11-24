@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Back_Estoque.Models;
+using Back_Estoque.Domain;
 using Backend_Estoque.Data;
 
 namespace Back_Estoque.Controllers
@@ -23,7 +23,7 @@ namespace Back_Estoque.Controllers
 
         // GET: api/Products
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Product>>> GetProdutos()
+        public async Task<ActionResult<IEnumerable<Product>>> GetProducts()
         {
             return await _context.Products.ToListAsync();
         }

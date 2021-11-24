@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Back_Estoque.Migrations
 {
-    public partial class Inicial : Migration
+    public partial class teste : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -37,8 +37,6 @@ namespace Back_Estoque.Migrations
                     Email = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Password = table.Column<string>(type: "longtext", nullable: true)
-                        .Annotation("MySql:CharSet", "utf8mb4"),
-                    ConfirmPassword = table.Column<string>(type: "longtext", nullable: true)
                         .Annotation("MySql:CharSet", "utf8mb4")
                 },
                 constraints: table =>
@@ -46,21 +44,6 @@ namespace Back_Estoque.Migrations
                     table.PrimaryKey("PK_Users", x => x.UserId);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "UserId", "ConfirmPassword", "Email", "Name", "Password" },
-                values: new object[] { 14535, "kevinkurt", null, "jean", "kevinkurt" });
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "UserId", "ConfirmPassword", "Email", "Name", "Password" },
-                values: new object[] { 223435, "kevinkurt", null, "gustavo", "kevinkurt" });
-
-            migrationBuilder.InsertData(
-                table: "Users",
-                columns: new[] { "UserId", "ConfirmPassword", "Email", "Name", "Password" },
-                values: new object[] { 363634, "kevinkurt", null, "marcelo", "kevinkurt" });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

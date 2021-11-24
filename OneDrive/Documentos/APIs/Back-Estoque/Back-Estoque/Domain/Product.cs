@@ -1,4 +1,4 @@
-﻿namespace Back_Estoque.Models
+﻿namespace Back_Estoque.Domain
 {
     public class Product
     {
